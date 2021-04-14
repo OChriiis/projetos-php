@@ -1,7 +1,7 @@
 <?php
 
 
-function mostrarNovoVetor($vetor){
+function mostrarChaves($vetor){
 
     foreach($vetor as $elemento){
 
@@ -13,5 +13,5 @@ function mostrarNovoVetor($vetor){
 
 $vetorParam = ["Ônibus", "Trêm", "Metrô", "Articulado"];
 
-$novoVetor = mostrarNovoVetor($vetorParam);
+$novoVetor = mostrarChaves($vetorParam);
   

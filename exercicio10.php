@@ -6,7 +6,7 @@ $vetor2 = [1, 3, 1];
 
 function teste (array $vetor1, array $vetor2){    
   
-  if (count($vetor1) > count($vetor2)){
+  if (count($vetor1) >= count($vetor2)){
   
     foreach($vetor1 as $valores1){
   
@@ -15,15 +15,15 @@ function teste (array $vetor1, array $vetor2){
       if($valores1 == $valores2){
   
         unset($vetor2[$a]);
-  
-        if(count($vetor2) == 0){
-  
-        return true;
-        
-          }  
         }
       }
     }
+
+    if(count($vetor2) == 0){
+  
+      return true;
+      
+        }  
 
   }else{
   
