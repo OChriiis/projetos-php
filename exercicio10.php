@@ -1,28 +1,37 @@
-//Não finalizado
+
 <?php
+ 
+$vetor1 = [1, 2, 3, 4, 5, 6];
+$vetor2 = [1, 3, 1];
 
-  function encontrarNome(array $vetorNomes, array $nomeProcurado){
-
-    foreach($vetorNomes as $nome){
-
-      if($nome == $nomeProcurado){
+function teste (array $vetor1, array $vetor2){    
+  
+  if (count($vetor1) > count($vetor2)){
+  
+    foreach($vetor1 as $valores1){
+  
+    foreach($vetor2 as $a => $valores2){
+  
+      if($valores1 == $valores2){
+  
+        unset($vetor2[$a]);
+  
+        if(count($vetor2) == 0){
+  
         return true;
+        
+          }  
+        }
       }
-
     }
 
-    return false;
-
-  }
-
-  $nomes = ["Gabriel", "Carine", "Italo", "Beatriz", "Gustavo"];
-
-  $nomeAEncontrar = ["Gabriel", "Carine", "Italo", "Beatriz", "Gustavo"];
-
-  if(encontrarNome($nomes, $nomeAEncontrar)){
-    echo "True";
   }else{
-    echo "False";
+  
+    return false;
+  
   }
 
-  //Não finalizado
+}
+
+
+echo(teste($vetor1,$vetor2));
