@@ -1,4 +1,4 @@
-<<?php
+<?php
 
 
 $vetorValores = ["Maria", "João", 100, "Abobrinha", "Espinafre"];

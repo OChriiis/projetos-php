@@ -18,7 +18,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../ds2m-a/styles-global.css" />
+  <link rel="stylesheet" href="../ds2m-a-exercicios-php/styles-global.css" />
   <title>SELECT - COMBO-BOX - DROPDOWN</title>
 </head>
  

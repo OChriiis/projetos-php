@@ -1,6 +1,7 @@
+//Não finalizado
 <?php
 
-  function encontrarNome(array $vetorNomes, $nomeProcurado){
+  function encontrarNome(array $vetorNomes, array $nomeProcurado){
 
     foreach($vetorNomes as $nome){
 
@@ -16,10 +17,12 @@
 
   $nomes = ["Gabriel", "Carine", "Italo", "Beatriz", "Gustavo"];
 
-  $nomeAEncontrar = "Beatriz";
+  $nomeAEncontrar = ["Gabriel", "Carine", "Italo", "Beatriz", "Gustavo"];
 
   if(encontrarNome($nomes, $nomeAEncontrar)){
-    echo "$nomeAEncontrar está na lista.";
+    echo "True";
   }else{
-    echo "$nomeAEncontrar não está na lista.";
+    echo "False";
   }
+
+  //Não finalizado

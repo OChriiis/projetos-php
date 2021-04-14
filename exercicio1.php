@@ -9,7 +9,7 @@ function somarInteiros(array $vetorInteiros){
 
     foreach($vetorInteiros as $numero){
 
-        $soma = $soma + $numero;      
+        $soma = ($soma + $numero) / 3;      
 
 
     }
