@@ -1,41 +1,30 @@
 <?php
-
-
-$numeros = [100, 1000, 20, 4590, 12389];
-
-function maiorMenor(array $vetor){
+function getMaiorMenor(array $inteiros){
     
-  $maior = $vetor[0];
+  $maior = $inteiros[0];
   
-  $menor = $vetor[0];
-
-    foreach ($vetor as $valor) {
+  $menor = $inteiros[0];
   
-      if($maior > $valor){
+  foreach($inteiros as $numero){
   
-        $maior = $maior; 
+    if($numero > $maior){
   
-      }else{
+      $maior = $numero;
   
-        $maior = $valor;
-  
-      }
-  
-      if($menor < $valor){
-  
-        $menor = $menor; 
-  
-      }else{
-  
-        $menor = $valor;
-  
-      }
     }
-
-    $novoVetor [] = $maior;
-    $novoVetor [] = $menor;
- 
-    return $novoVetor;
+  
+    if($numero < $menor){
+  
+      $menor = $numero;
+  
+    }
+  
+  }
+  
+  return [$maior, $menor];
 }
 
-print_r(maiorMenor($numeros));
+
+$vetor = [50, 60, 2, 9];
+
+print_r(getMaiorMenor($vetor));
